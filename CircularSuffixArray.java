@@ -155,7 +155,7 @@ public class CircularSuffixArray {
 
 		int l = lo;
 		int r = hi;
-		// int p = SuffixArr[lo]; // pivot
+		// int p = SuffixArr[lo];  // pivot
 		int p_dRank = dRank(SuffixArr[lo]); // rank of pivot + d
 		int i = lo + 1;
 		while (i <= r) {
