@@ -1,12 +1,11 @@
-
 public class BurrowsWheeler {
     private static final int RADIX = 256; 
 
     // apply Burrows-Wheeler transform,
     // reading from standard input and writing to standard output 
     public static void transform() {
-		// check if input is empty
-		if (BinaryStdIn.isEmpty()) return;
+        // check if input is empty
+        if (BinaryStdIn.isEmpty()) return;
 
         // read string from input
         String inputStr = BinaryStdIn.readString();
@@ -22,15 +21,15 @@ public class BurrowsWheeler {
         // iterate sorted suffixed
         for (int i = 0; i < sLen; i++) {
             // find row of index(i) = 0
-			int prevIdx = csArr.index(i) - 1;
-			// csArr.index(i) == 0
+            int prevIdx = csArr.index(i) - 1;
+            // csArr.index(i) == 0
             if (prevIdx == -1) { 
-				first = i;
-				prevIdx += sLen;
-			}
+                first = i;
+                prevIdx += sLen;
+            }
             // calculate index in original sufffixes for row i
             // int prevIdx = (csArr.index(i) - 1 + sLen) % sLen;
-			
+            
             lastColSB.append(inputStr.charAt(prevIdx));
         }
 
@@ -80,15 +79,15 @@ public class BurrowsWheeler {
 
     // if args[0] is "-", apply Burrows-Wheeler transform
     // if args[0] is "+", apply Burrows-Wheeler inverse transform
-	public static void main(String[] args) {
-		if (args == null || args.length == 0) 
-			throw new IllegalArgumentException();
-		if (args[0].equals("-")) 
-			transform();
-		else if (args[0].equals("+")) 
-			inverseTransform();
-		else 
-			throw new IllegalArgumentException();
+    public static void main(String[] args) {
+        if (args == null || args.length == 0) 
+            throw new IllegalArgumentException();
+        if (args[0].equals("-")) 
+            transform();
+        else if (args[0].equals("+")) 
+            inverseTransform();
+        else 
+            throw new IllegalArgumentException();
     }
 
 }
