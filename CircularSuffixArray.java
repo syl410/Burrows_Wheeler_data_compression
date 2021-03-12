@@ -52,14 +52,14 @@ public class CircularSuffixArray {
     private void keyIndexedCounting() {
         int[] count = new int[RADIX + 1];
 
-    // count frequencies
-    for (int i = 0; i < sLen; i++)
+        // count frequencies
+        for (int i = 0; i < sLen; i++)
             count[strIn.charAt(i) + 1]++;
         // compute cumulates
         for (int r = 0; r < RADIX; r++)
             count[r + 1] += count[r];
         // move items
-    for (int i = 0; i < sLen; i++)
+        for (int i = 0; i < sLen; i++)
             rank[count[strIn.charAt(i)]++] = SuffixArr[i]; // rank is used as aux array to save memory
         // copy back
         for (int i = 0; i < sLen; i++)
