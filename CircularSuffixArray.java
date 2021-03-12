@@ -1,21 +1,21 @@
 import java.util.Arrays;
 
 public class CircularSuffixArray {
-	private static final int RADIX = 256;
-	private static String strIn;
+    private static final int RADIX = 256;
+    private static String strIn;
     private final int sLen; // input strIn length
 
-	// rank of sorted suffix array
-	// index is ranking
-	// int value is index original suffix array
+    // rank of sorted suffix array
+    // index is ranking
+    // int value is index original suffix array
     private final int[] rank;
-	// rank of last sort of d digits
-	// array index is the index of original SuffixArr
-	private int[] lastRank;
+    // rank of last sort of d digits
+    // array index is the index of original SuffixArr
+    private int[] lastRank;
 
-	private int[] SuffixArr;
+    private int[] SuffixArr;
 
-	private int d; // number of digits sorted
+    private int d; // number of digits sorted
 
     // circular suffix array of s
     public CircularSuffixArray(String s) {
