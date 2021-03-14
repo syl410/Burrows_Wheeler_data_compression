@@ -3,7 +3,7 @@
 This is a bzip2 like data compression program.\
 It implements primary aglorithms used in the bzip2.\
 The compression ratio is close to bzip2.\
-This originates from one [project] (https://coursera.cs.princeton.edu/algs4/assignments/burrows/specification.php) of courses of Algorithms Part 1 and Part2 with more implementation on algorithm and bash script to make it a real compression program.
+This originates from one [project](https://coursera.cs.princeton.edu/algs4/assignments/burrows/specification.php) of courses of Algorithms Part 1 and Part2 with more implementation on algorithm and bash script to make it a real compression program.
 
 
 **Workflow of the data compression and decompression:**\
