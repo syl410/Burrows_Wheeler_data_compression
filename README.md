@@ -10,17 +10,17 @@ Burrows–Wheeler transform -> Move-to-front encoding -> Huffman compression\
 Decompression:\
 Burrows–Wheeler inverse transform -> Move-to-front decoding -> Huffman decompression
 
-Main algorithm used in this data compression program:
-*Circular suffix sort:* sort array of the n circular suffixes of a string of length n.\
+**Main algorithm used in this data compression program**:\
+***Circular suffix sort:*** sort array of the n circular suffixes of a string of length n.\
             - Manber-Myers MSD algorithm\
             ・ Phase 0: sort on first character using key-indexed counting sort.\
             ・ Phase i: given array of suffixes sorted on first 2i-1 characters,\
                         create array of suffixes sorted on first 2i characters.\
             
-*Burrows–Wheeler transform:* transform typical English text file into a text file in which sequences of the same character occur near each other many times.
+***Burrows–Wheeler transform:*** transform typical English text file into a text file in which sequences of the same character occur near each other many times.
 
-*Move-to-front encoding:* convert string into a string in which certain characters appear much more frequently than others.
+***Move-to-front encoding:*** convert string into a string in which certain characters appear much more frequently than others.
 
-*Huffman compression:* compress text by encoding frequently occurring characters with short codewords and infrequently occurring characters with long codewords.
+***Huffman compression:*** compress text by encoding frequently occurring characters with short codewords and infrequently occurring characters with long codewords.
 
 
