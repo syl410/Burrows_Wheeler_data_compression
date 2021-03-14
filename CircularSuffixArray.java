@@ -13,6 +13,7 @@ public class CircularSuffixArray {
     // array index is the index of original SuffixArr
     private int[] lastRank;
 
+    // Suffix array, index is order of sorted array, value is original order in the array
     private int[] SuffixArr;
 
     private int d; // number of digits sorted
