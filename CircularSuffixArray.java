@@ -66,7 +66,7 @@ public class CircularSuffixArray {
         for (int i = 0; i < sLen; i++)
             SuffixArr[i] = rank[i];
 
-        int ranking = 0;
+        int ranking = 0; // it is ranking of each char of RADIX, like 0 for 1st char, 50 for 2nd char
         for (int r = 0; r < RADIX; r++) {
             int max = count[r];
             for (int i = ranking; i < max; i++) {
