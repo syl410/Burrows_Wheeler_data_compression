@@ -1,8 +1,7 @@
 # Burrows_Wheeler_data_compression
 
-Circular suffix sort
-
-Manber-Myers MSD algorithm
+Circular suffix sort\
+Manber-Myers MSD algorithm\
 
 ・ Phase 0: sort on first character using key-indexed counting sort.
 
