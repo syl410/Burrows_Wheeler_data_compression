@@ -41,7 +41,7 @@ ARD!RCAAAABB
 ![image](https://user-images.githubusercontent.com/16233638/111110943-73557380-852b-11eb-8f50-3e6a630bdbac.png)
 
 
-2, More details about Huffman compression ([reference](https://www.coursera.org/learn/algorithms-part2/supplement/v5gBy/lecture-slides)):\
+2, More details about Huffman compression\
 *Compression*
 - read string from input
 - get frequency of each radix (freArr)
