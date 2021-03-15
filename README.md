@@ -25,6 +25,8 @@ Burrows–Wheeler inverse transform -> Move-to-front decoding -> Huffman decompr
 ***Huffman compression:*** compress text by encoding frequently occurring characters with short codewords and infrequently occurring characters with long codewords.
 
 
+------------
+
 More details about Burrows–Wheeler transform ([reference](https://coursera.cs.princeton.edu/algs4/assignments/burrows/specification.php)):\
 *Burrows–Wheeler transform*\
 ![image](https://user-images.githubusercontent.com/16233638/111111050-9e3fc780-852b-11eb-9d3a-365e874b6867.png)\
@@ -35,6 +37,6 @@ ARD!RCAAAABB
 *Burrows–Wheeler inverse transform*
 - Inverting the message given t[], first, and the next[] array. Sort last column to get first column and search from first to each next line:\
 ![image](https://user-images.githubusercontent.com/16233638/111111355-2aea8580-852c-11eb-9ba2-dbbb65918253.png)
-- Constructing the next[] array from t[] and first. It is easy to deduce a next[] value for a character that appears exactly once in the input string. For char appears twice or more, they match the relative order in the last column.
-![image](https://user-images.githubusercontent.com/16233638/111110943-73557380-852b-11eb-8f50-3e6a630bdbac.png)\
+- Constructing the next[] array from t[] and first. It is easy to deduce a next[] value for a character that appears exactly once in the input string. For char appears twice or more, they match the relative order in the last column.\
+![image](https://user-images.githubusercontent.com/16233638/111110943-73557380-852b-11eb-8f50-3e6a630bdbac.png)
 
