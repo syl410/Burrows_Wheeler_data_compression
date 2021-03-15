@@ -5,9 +5,9 @@ public class CircularSuffixArray {
     private static String strIn;
     private final int sLen; // input strIn length
 
-    // rank of sorted suffix array
-    // index is ranking
-    // int value is index original suffix array
+    // ranking of sorted suffix array
+    // index is index of the sorted suffix array
+    // int value is ranking of current d
     private final int[] rank;
     // rank of last sort of d digits
     // array index is the index of original SuffixArr
@@ -61,7 +61,7 @@ public class CircularSuffixArray {
             count[r + 1] += count[r];
         // move items
         for (int i = 0; i < sLen; i++)
-            rank[count[strIn.charAt(i)]++] = SuffixArr[i]; // rank is used as aux array to save memory
+            rank[count[strIn.charAt(i)]++] = SuffixArr[i]; // rank is temporarily used as aux array to save memory
         // copy back
         for (int i = 0; i < sLen; i++)
             SuffixArr[i] = rank[i];
