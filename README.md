@@ -26,7 +26,7 @@ Burrows–Wheeler inverse transform -> Move-to-front decoding -> Huffman decompr
 
 
 More details about Burrows–Wheeler transform:\
-i     Original Suffixes          Sorted Suffixes       t    index[i]\
+i          Original Suffixes          Sorted Suffixes       t    index[i]\
 --    -----------------------     -----------------------    --------\
  0    A B R A C A D A B R A !     ! A B R A C A D A B R A    11\
  1    B R A C A D A B R A ! A     A ! A B R A C A D A B R    10\
