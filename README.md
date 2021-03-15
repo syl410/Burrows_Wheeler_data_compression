@@ -27,7 +27,7 @@ Burrows–Wheeler inverse transform -> Move-to-front decoding -> Huffman decompr
 
 ------------
 
-More details about Burrows–Wheeler transform ([reference](https://coursera.cs.princeton.edu/algs4/assignments/burrows/specification.php)):\
+1, More details about Burrows–Wheeler transform ([reference](https://coursera.cs.princeton.edu/algs4/assignments/burrows/specification.php)):\
 *Burrows–Wheeler transform*\
 ![image](https://user-images.githubusercontent.com/16233638/111111050-9e3fc780-852b-11eb-9d3a-365e874b6867.png)\
 result:\
@@ -40,3 +40,18 @@ ARD!RCAAAABB
 - Constructing the next[] array from t[] and first. It is easy to deduce a next[] value for a character that appears exactly once in the input string. For char appears twice or more, they match the relative order in the last column.\
 ![image](https://user-images.githubusercontent.com/16233638/111110943-73557380-852b-11eb-8f50-3e6a630bdbac.png)
 
+
+2, More details about Huffman compression ([reference](https://www.coursera.org/learn/algorithms-part2/supplement/v5gBy/lecture-slides)):\
+*Compression*\
+- read string from input
+- get frequency of each radix (freArr)
+- write length
+- construct trie from freArr
+- write trie
+- build symbol table from trie       
+- encode inputStr using the symbol table
+
+*Decompression*
+- read length
+- read flat trie and and re-build trie
+- decode inputStr using trie
