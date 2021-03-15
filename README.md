@@ -26,7 +26,12 @@ Burrows–Wheeler inverse transform -> Move-to-front decoding -> Huffman decompr
 
 
 More details about Burrows–Wheeler transform ([reference](https://coursera.cs.princeton.edu/algs4/assignments/burrows/specification.php)):\
-![image](https://user-images.githubusercontent.com/16233638/111110943-73557380-852b-11eb-8f50-3e6a630bdbac.png)
+*Burrows–Wheeler transform*\
+![image](https://user-images.githubusercontent.com/16233638/111111050-9e3fc780-852b-11eb-9d3a-365e874b6867.png)\
 result:\
 3\
 ARD!RCAAAABB\
+*Burrows–Wheeler inverse transform*\
+- Inverting the message given t[], first, and the next[] array:\
+![image](https://user-images.githubusercontent.com/16233638/111110943-73557380-852b-11eb-8f50-3e6a630bdbac.png)\
+
