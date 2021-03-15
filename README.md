@@ -42,7 +42,7 @@ ARD!RCAAAABB
 
 
 2, More details about Huffman compression ([reference](https://www.coursera.org/learn/algorithms-part2/supplement/v5gBy/lecture-slides)):\
-*Compression*\
+*Compression*
 - read string from input
 - get frequency of each radix (freArr)
 - write length
