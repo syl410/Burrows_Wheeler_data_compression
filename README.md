@@ -26,6 +26,7 @@ Burrows–Wheeler inverse transform -> Move-to-front decoding -> Huffman decompr
 
 
 More details about Burrows–Wheeler transform ([reference](https://coursera.cs.princeton.edu/algs4/assignments/burrows/specification.php)):\
+![image](https://user-images.githubusercontent.com/16233638/111110943-73557380-852b-11eb-8f50-3e6a630bdbac.png)
 result:\
 3\
 ARD!RCAAAABB\
